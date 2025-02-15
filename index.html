@@ -9,11 +9,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- <h1>this is my portfolio website.</h1> -->
     <!-- navbar -->
-    <nav class="navbar">
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar" id="navbar">
       <ul class="link-group">
         <li class="link active"><a href="#home">home</a></li>
         <li class="link"><a href="#projects">projects</a></li>
@@ -21,69 +28,81 @@
         <li class="link"><a href="#contact">contact</a></li>
       </ul>
     </nav>
+  </header>
 
     <!-- home section -->
     <section id="home" class="home-section active">
-      <h1 class="hero-heading">
-        Hi, I'm Hitesh <br />
-        a Web Developer
-      </h1>
-      <img src="img/IMG_0390.jpeg" class="home-img" alt="" />
+      <div class="home-content">
+          <h3>Hi, Myself</h3>
+          <h1>I'm Hitesh Yadav</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="https://github.com/hitesh-ydv/" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hiteshydv/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/hitexh_._ydv/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <button class="download-cv-btn">Download CV</button>
+      </div>
+      
+
+      <div class="home-img">
+        <img src="img/cropped_image.png" class="home-img" alt="" />
+      </div>
     </section>
 
     <!-- project section -->
     <section id="projects" class="project-section active">
-      <h1 class="project-heading">some of my projects</h1>
+      <h1 class="project-heading">my <span>projects</span></h1>
       <div class="project-container">
         <div class="project-card">
-          <img src="img/spodcast.png" class="project-img" alt="" />
+          <img src="img/david-pupaza-Km5J-KCP1Mw-unsplash.jpg" class="project-img" alt="" />
           <div class="project-content">
             <h1 class="project-title">Spodcast</h1>
             <p class="project-info">
               A music streaming app that offers seamless audio playback, personalized playlists, and artist recommendations, delivering an experience similar to Spotify. It allows users to explore, play, and save their favorite tracks with intuitive controls and real-time updates.
             </p>
             <div class="project-btn-grp">
-              <a href="https://github.com/hitesh-ydv/spodcast.git"><button class="project-btn github">github repo</button></a>
-              <a href="https://spodcast.vercel.app/"><button class="project-btn live">see live</button></a>
+              <a href="https://github.com/hitesh-ydv/spodcast.git" target="_blank"><button class="project-btn github">github repo</button></a>
+              <a href="https://spodcast.vercel.app/" target="_blank"><button class="project-btn live">see live</button></a>
             </div>
           </div>
         </div>
         <div class="project-card">
-          <img src="img/netflix-clone.png" class="project-img" alt="" />
+          <img src="img/jakub-zerdzicki-ssDr_sfsAKs-unsplash.jpg" class="project-img" alt="" />
           <div class="project-content">
             <h1 class="project-title">Flixmate</h1>
             <p class="project-info">
               A movie streaming app that provides on-demand access to a vast library of movies and TV shows, featuring high-quality playback and personalized recommendations. Users can browse by genre, create watchlists, and enjoy a seamless viewing experience anytime, anywhere.
             </p>
             <div class="project-btn-grp">
-              <a href="https://github.com/hitesh-ydv/flixmate.git"><button class="project-btn github">github repo</button></a>
-              <a href="https://netflicz-reactjs-rho.vercel.app/"><button class="project-btn live">see live</button></a>
+              <a href="https://github.com/hitesh-ydv/flixmate.git" target="_blank"><button class="project-btn github">github repo</button></a>
+              <a href="https://netflicz-reactjs-rho.vercel.app/" target="_blank"><button class="project-btn live">see live</button></a>
             </div>
           </div>
         </div>
         <div class="project-card">
-          <img src="img/chat-app.png" class="project-img" alt="" />
+          <img src="img/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg" class="project-img" alt="" />
           <div class="project-content">
             <h1 class="project-title">Chatty</h1>
             <p class="project-info">
               A chat app that enables real-time messaging, file sharing, and seamless communication with a user-friendly interface. It supports individual and group chats, status updates, and online/offline indicators for a connected experience
             </p>
             <div class="project-btn-grp">
-              <a href="https://github.com/hitesh-ydv/mern_chat_app.git"><button class="project-btn github">github repo</button></a>
-              <a href="https://mern-chat-app-4p4s.onrender.com/login"><button class="project-btn live">see live</button></a>
+              <a href="https://github.com/hitesh-ydv/mern_chat_app.git" target="_blank"><button class="project-btn github">github repo</button></a>
+              <a href="https://mern-chat-app-4p4s.onrender.com/login" target="_blank"><button class="project-btn live">see live</button></a>
             </div>
           </div>
         </div>
         <div class="project-card">
-          <img src="img/madlus-ai.png" class="project-img" alt="" />
+          <img src="img/growtika-nGoCBxiaRO0-unsplash.jpg" class="project-img" alt="" />
           <div class="project-content">
             <h1 class="project-title">Madlus Ai</h1>
             <p class="project-info">
               A chatting AI app that uses advanced natural language processing to provide instant, intelligent, and human-like responses. It can assist with queries, hold conversations, and adapt to user preferences for a personalized chat experience.
             </p>
             <div class="project-btn-grp">
-              <a href="https://github.com/hitesh-ydv/madlus_ai.git"><button class="project-btn github">github repo</button></a>
-              <a href="https://madlus-ai.vercel.app/"><button class="project-btn live">see live</button></a>
+              <a href="https://github.com/hitesh-ydv/madlus_ai.git" target="_blank"><button class="project-btn github">github repo</button></a>
+              <a href="https://madlus-ai.vercel.app/" target="_blank"><button class="project-btn live">see live</button></a>
             </div>
           </div>
         </div>
@@ -94,22 +113,24 @@
     <section id="about" class="about-section active">
       <div class="about">
         <div class="about-img-container">
-          <img src="img/IMG_0390.jpeg" class="about-img" alt="" />
+          <img src="img/IMG_2718.jpeg" class="about-img" alt="" />
           <a
             href="https://drive.google.com/file/d/1a4KHHLXBKP-vTGrFCRcIG3f0_FVsV07t/view?usp=sharing"
             target="_blank"
           >
-            <button class="download-cv-btn">Download CV</button>
+          
           </a>
         </div>
         <p class="about-info">
           A talented web developer with a strong foundation in HTML, CSS, and JavaScript, specializing in crafting modern, responsive websites and web applications. With expertise in React.js, they build dynamic and efficient user interfaces, ensuring seamless navigation and performance. Their skills include implementing reusable components, state management, and integrating APIs to deliver feature-rich applications. Passionate about clean code and responsive design, they focus on optimizing for cross-browser compatibility and user accessibility, ensuring every project is both functional and visually appealing.
+          <a href="#" class="read-more">Read More</a>
         </p>
+        
       </div>
 
       <!-- skills -->
       <div class="skill-section">
-        <h1 class="heading">skills</h1>
+        <h1 class="heading">My <span>skills</span></h1>
         <div class="skills-container">
           <div class="skill-card">
             <img src="img/html.png" class="skill-img" alt="" />
@@ -157,7 +178,7 @@
       <!-- timeline -->
       <div class="timeline">
         <h1 class="heading">education and experience</h1>
-        <div class="card">
+        <div class="card right">
           <div class="card-body">
             <h1 class="card-title">2024-2025</h1>
             <p class="card-detail">
@@ -169,7 +190,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card left">
           <div class="card-body">
             <h1 class="card-title">2024-2025</h1>
             <p class="card-detail">
@@ -181,7 +202,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card right">
           <div class="card-body">
             <h1 class="card-title">2024-2025</h1>
             <p class="card-detail">
@@ -193,7 +214,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card left">
           <div class="card-body">
             <h1 class="card-title">2024-2025</h1>
             <p class="card-detail">
@@ -205,7 +226,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card right">
           <div class="card-body">
             <h1 class="card-title">2024-2025</h1>
             <p class="card-detail">
@@ -254,6 +275,8 @@
       </div>
     </section>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="script.js" type="module"></script>
