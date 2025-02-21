@@ -100,12 +100,3 @@ ScrollReveal().reveal('.home-content, heading',{origin : 'top'});
 ScrollReveal().reveal('.home-img',{origin : 'bottom'});
 ScrollReveal().reveal('.project-card, .about-info, .right , .map',{origin : 'right'});
 ScrollReveal().reveal('.about-img-container, .skill-card, .left, .contact-form',{origin : 'left'});
-
-
-const typed = new Typed('.multiple-text',{
-    strings: ['Web Developer', 'UI/UX Designer', 'Youtuber' ],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
-    loop: true,
-});

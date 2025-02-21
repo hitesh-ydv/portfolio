@@ -337,7 +337,7 @@ flex-wrap: wrap;}
 }
 
 .read-more {
-    padding: 10px 10px;
+    padding: 4px 10px;
     color: var(--bg-color);
     width: 120px;
     display: flex;
@@ -352,6 +352,11 @@ flex-wrap: wrap;}
     background: var(--main-color);
     box-shadow: 0 0 1rem var(--main-color);
     margin-top: 20px;
+    transition: all 0.5 ease;
+}
+
+.read-more:hover{
+    box-shadow: none;
 }
 
 /* skills */
@@ -646,6 +651,11 @@ flex-wrap: wrap;}
     .home-section {
         flex-direction: column-reverse;
         gap: 20px;
+    }
+
+    header{
+        backdrop-filter: none;
+        background: var(--bg-color);
     }
 
     #navbar{
